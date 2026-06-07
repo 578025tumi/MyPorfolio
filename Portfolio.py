@@ -9,25 +9,39 @@ st.set_page_config(page_title="Tumelo Rakabe | Portfolio", page_icon="🚀", lay
 st.markdown("""
     <style>
     .main { background-color: #0e1117; }
+    
+    /* Force headers to Cyan */
     h1, h2, h3 { color: #00d4ff !important; }
+    
+    /* Skill Tags - Cyan text on dark background */
     .skill-tag {
         background-color: #1e2130;
+        color: #00d4ff !important;
         border: 1px solid #00d4ff;
         border-radius: 15px;
         padding: 5px 15px;
         margin: 5px;
         display: inline-block;
         font-size: 0.8rem;
+        font-weight: bold;
     }
+    
+    /* Certificate Cards - White text on dark background */
     .cert-card {
-        background-color: #161b22;
-        padding: 15px;
-        border-radius: 10px;
+        background-color: #1e2130;
+        color: #ffffff !important;  /* THIS FIXES THE INVISIBLE TEXT */
+        padding: 12px;
+        border-radius: 8px;
         border-left: 5px solid #00d4ff;
         margin-bottom: 10px;
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     }
     </style>
     """, unsafe_allow_html=True)
+    
 
 # --- SIDEBAR ---
 with st.sidebar:
